@@ -2,10 +2,11 @@ package br.com.Shows.Crud.Model;
 
 import java.util.List;
 import java.util.Map;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 
 import br.com.Shows.Crud.acoes.BandaAcoes;
@@ -32,9 +33,13 @@ public class BandaController {
 	    mav.addObject("listBanda", listBanda);
 	    return mav;
 	    
-	    
+	}
 	    @RequestMapping("/nova")
-	    public String newCustomerForm(Map<String, Object> model) {
+	    public  String newBandaForm( Map <String, Object>model)
+	    
+	    
+	    {
+	    
 	        Banda banda = new Banda();
 	        model.put("banda", banda);
 	        return "nova_banda";
@@ -42,7 +47,8 @@ public class BandaController {
 	    
 	    
 	    @RequestMapping(value = "/salvar", method = RequestMethod.POST)
-	    public String saveCustomer(@ModelAttribute("banda") Banda banda){
+	    public String saveBanda (@ModelAttribute("banda") Banda banda) {
+	    
 	        BandaAcoes.save(banda);
 	        return "redirect:/";
 	    }
@@ -52,4 +58,3 @@ public class BandaController {
     
     
     
-}

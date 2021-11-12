@@ -22,11 +22,11 @@
     <table style="border-collapse: separate; border-spacing: 10px;" >
         <tr>
             <th>Id</th>
-            <th>Name</th>
+            <th>Nome</th>
             <th>genero</th>
             
         </tr>
-        <c:forEach items="${listBandas}" var="banda">
+        <c:forEach items="${listbandas}" var="banda">
         <tr>
             <td>${banda.id}</td>
             <td>${banda.nome}</td>

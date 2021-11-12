@@ -14,7 +14,7 @@
             <table style="border-collapse: separate; border-spacing: 10px;">
                 <tr>
                     <td>Nome: </td>
-                    <td><form:input path="name" /></td>
+                    <td><form:input path="nome" /></td>
                 </tr>
                 <tr>
                     <td>genero: </td>

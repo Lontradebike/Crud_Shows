@@ -12,9 +12,10 @@ import br.com.Shows.Crud.Model.BandaRepositorio;
 @Service
 @Transactional
 public class BandaAcoes {
-    @Autowired BandaRepositorio repo;
+    @Autowired
+	static BandaRepositorio repo;
      
-    public void save(Banda banda) {
+    public static void save(Banda banda) {
         repo.save(banda);
     }
      
