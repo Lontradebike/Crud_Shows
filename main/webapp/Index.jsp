@@ -19,14 +19,15 @@
         <input type="submit" value="Search" />
     </form>
     <h3><a href="/nova">Nova Banda</a></h3>
-    <table style="border-collapse: separate; border-spacing: 10px;" >
+    <table style="border-collapse: separate; border-spacing: 10px;"  >
         <tr>
             <th>Id</th>
             <th>Nome</th>
             <th>genero</th>
             
         </tr>
-        <c:forEach items="${listbandas}" var="banda">
+        <c:forEach items="${listBanda}" var="banda">
+        
         <tr>
             <td>${banda.id}</td>
             <td>${banda.nome}</td>

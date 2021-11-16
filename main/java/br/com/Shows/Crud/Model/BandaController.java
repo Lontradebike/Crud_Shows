@@ -27,9 +27,10 @@ public class BandaController {
 	}
     
 	@RequestMapping("/")
-	public ModelAndView home() {
+	public ModelAndView home() {  
+		ModelAndView mav = new ModelAndView("index");
 	    List<Banda> listBanda = bandaAcoes.listAll();
-	    ModelAndView mav = new ModelAndView("index");
+	    
 	    mav.addObject("listBanda", listBanda);
 	    return mav;
 	    
