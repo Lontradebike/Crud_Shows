@@ -14,7 +14,9 @@ public class Banda {
 	@Column (name="id")
 	@GeneratedValue(strategy= GenerationType.AUTO)
 	private long id;
+	@Column
 	private String nome;
+	@Column
 	private String genero;
 	
 	

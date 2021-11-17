@@ -32,7 +32,9 @@ public class BandaController {
 	    List<Banda> listBanda = bandaAcoes.listAll();
 	    
 	    mav.addObject("listBanda", listBanda);
+	    System.out.println("deu certo");
 	    return mav;
+	    
 	    
 	}
 	    @RequestMapping("/nova")

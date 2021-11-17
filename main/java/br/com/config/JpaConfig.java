@@ -1,4 +1,4 @@
-package br.com.config;
+	package br.com.config;
 
 import javax.persistence.EntityManagerFactory;
 

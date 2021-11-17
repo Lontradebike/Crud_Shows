@@ -10,7 +10,7 @@
 <body>
     <div align="center">
         <h2>Nova Banda</h2>
-        <form:form action="save" method="post" modelAttribute="banda">
+        <form:form action="save" method="post" commandName="banda">
             <table style="border-collapse: separate; border-spacing: 10px;">
                 <tr>
                     <td>Nome: </td>
@@ -20,7 +20,7 @@
                     <td>genero: </td>
                     <td><form:input path="genero" /></td>
                 </tr>
-               
+
                 <tr>
                     <td colspan="2"><input type="submit" value="Save"></td>
                 </tr>                    
@@ -28,4 +28,4 @@
         </form:form>
     </div>
 </body>
-</html>
+</html> 
